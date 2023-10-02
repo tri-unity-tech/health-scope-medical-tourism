@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/components/Header/index.jsx",
+    "pages/components/Header/menuData.js",
+    "pages/components/Header/ThemeToggler.jsx",
+    "pages/components/Features/featuresData.js",
+    "pages/components/Features/index.jsx",
+    "pages/components/Features/SingleFeature.jsx",
+    "pages/components/Common/SectionTitle.jsx",
+    "pages/components/Footer/index.jsx",
+    "pages/components/Video/index.jsx",
+    "pages/components/Hero/index.jsx",
+    "pages/components/Blog/blogData.js",
+    "pages/components/Blog/TagButton.jsx",
+    "pages/components/Blog/SingleBlog.jsx",
+    "pages/components/Blog/SharePost.jsx",
+    "pages/components/Blog/RelatedPost.jsx",
+    "pages/components/Blog/index.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
