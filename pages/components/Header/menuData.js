@@ -10,13 +10,13 @@ export const menuData = [
   {
     id: 2,
     title: 'About',
-    path: '/nor/about',
+    path: '',
     newTab: false,
   },
   {
     id: 33,
     title: 'Services',
-    path: '/nor/services',
+    path: '',
     newTab: false,
   },
   {

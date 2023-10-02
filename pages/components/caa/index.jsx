@@ -11,7 +11,7 @@ const CAA = () => {
         <div className='container gap-10 grid sm:grid-cols-2'>
           
           <div className='grid'>
-            <div className='grid gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
+            <div className='grid gap-4 sm:gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
               <div className='bg-black rounded-xl overflow-hidden row-start-1 row-span-6'>
                 <ImageFill src='/images/acco.jpg' alt='previews' />
               </div>
@@ -19,7 +19,7 @@ const CAA = () => {
                 <ImageFill src='/images/pexels-mart-production-7089625.jpg' alt='previews' />
               </div>
             </div>
-            <div className='grid gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
+            <div className='grid gap-4 sm:gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
               <div className='bg-black rounded-xl overflow-hidden row-start-1 row-span-6'>
                 <ImageFill src='/images/equip.jpg' alt='previews' />
               </div>
