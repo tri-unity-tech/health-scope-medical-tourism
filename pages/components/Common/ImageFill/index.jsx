@@ -8,7 +8,8 @@ const ImageFill = ({src, alt}) => {
                 src={src} 
                 alt={alt}
                 fill 
-                priority
+                blurDataURL="URL"
+                placeholder="blur"
                 style={{
                     objectFit: 'cover',
                   }}

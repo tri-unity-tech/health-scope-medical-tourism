@@ -25,209 +25,34 @@ import { RiTruckFill } from 'react-icons/ri';
 import { BsStack, BsFillInfoCircleFill } from 'react-icons/bs';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
 
-export const MegaMenuContent = [
-  {
-    title: `Medier`,
-    color: 'bg-pink-600',
-    secArray: true,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/Media-1024x927.png`,
-    sec_sub: [
-      {
-        title: 'Printmedier',
-        third_sub: [
-          { title: 'Banner' },
-          { title: 'Film' },
-          { title: 'Rollup' },
-        ],
-      },
-      {
-        title: 'Selvklebende',
-        third_sub: [
-          { title: 'Skjærefolier' },
-          { title: 'Printfolier' },
-          { title: 'Applikasjon' },
-          { title: 'Wrapping/Bilfoile' },
-        ],
-      },
-      { title: 'Magnet', third_sub: [{ title: 'Digital' }] },
-      {
-        title: 'Sol & Vindusfilm',
-        third_sub: [
-          { title: 'Solfilm' },
-          { title: 'Dekor' },
-          { title: 'Sikkerhet' },
-          { title: 'Anitgrafitti' },
-          { title: 'Auto' },
-        ],
-      },
-      {
-        title: 'Foamboard',
-        third_sub: [{ title: 'Premium' }, { title: 'Expo' }],
-      },
-      {
-        title: 'Priplak',
-        third_sub: [
-          { title: 'Opaque' },
-          { title: 'Frostet' },
-          { title: 'Klar' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Verktøy`,
-    color: 'bg-orange-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/07/verktoy-1-1010x1024.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Display`,
-    color: 'bg-purple-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/07/Display-1-937x1024.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Maskiner`,
-    color: 'bg-green-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/maskiner-1024x992.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Blekk`,
-    color: 'bg-black',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/blekk-982x1024.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Interiør`,
-    color: 'bg-blue-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/Interior-1024x952.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Silketrykk`,
-    color: 'bg-gray-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/Silketrykk-1024x954.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
-  {
-    title: `Bærekraft`,
-    color: 'bg-yellow-600',
-    secArray: false,
-    img: `https://dev.norleas.no/wp-content/uploads/2023/06/Baerekraft-1015x1024.png`,
-    sec_sub: [
-      {
-        third_sub: [
-          { title: 'Rengjøring' },
-          { title: 'Skjæreutstyr' },
-          { title: 'Maljer' },
-          { title: 'Snorer/Kriker' },
-          { title: 'Rullstativ' },
-          { title: 'Kniver' },
-          { title: 'Lingaler' },
-          { title: 'Kuttematter' },
-          { title: 'Montering' },
-          { title: 'Overflatebehandling' },
-        ],
-      },
-    ],
-  },
+export const MedService = [
+	{ title: 'Cancer Treatments',
+	  para: 'Explore cutting-edge cancer treatments abroad.'
+	},
+	{ title: 'Cardiology',
+	  para: 'Access top cardiac experts and state-of-the-art facilities for your heart health needs.'
+	},
+	{ title: 'Orthopaedics',
+	  para: 'Find top orthopaedic specialists and advanced treatments for your musculoskeletal health.'
+	},
+	{ title: 'IVF',
+	  para: 'Access renowned fertility clinics and expert reproductive specialists for your path to parenthood.'
+	},
+	{ title: 'Neurology',
+	  para: 'Access leading neurologists and advanced treatments for neurological conditions, ensuring a healthier future.'
+	},
+	{ title: 'Cosmetic surgery',
+	  para: 'Discover skilled surgeons and rejuvenating procedures for a more confident you.'
+	},
+	{ title: 'Dentistry',
+	  para: 'Access world-class dentists and modern treatments for a brighter, healthier grin.'
+	},
+	{ title: 'Organ Transplant',
+	  para: 'Connect with expert transplant teams for hope and healing.'
+	},
+	{ title: 'Hip and knee Replacement',
+	  para: 'Reclaim mobility and comfort through hip and knee replacements with medical tourism. '
+	},
 ];
 
 export const countries = [

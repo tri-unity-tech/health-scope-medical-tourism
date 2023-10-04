@@ -5,6 +5,8 @@ import Features from '../components/Features';
 import Partners from '../components/Partners';
 import CAA from '../components/caa';
 import CAB from '../components/cab';
+import CAC from '../components/cac';
+import CAD from '../components/cad';
 
 const HeroCover = () => {
   return (
@@ -14,6 +16,8 @@ const HeroCover = () => {
         <Features />
         <CAA />
         <CAB />
+        <CAC />
+        <CAD />
       </Layout>
     </>
   );
