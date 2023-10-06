@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className='flex justify-center relative z-10 text-gray-700 bg-gray-900 px-5 pt-16 md:pt-20 lg:pt-24'
+        className='flex justify-center relative z-10 text-gray-700 bg-gray-900 px-5 pt-16 md:pt-20 lg:pt-40'
         data-wow-delay='.1s'
       >
         <div className='container'>

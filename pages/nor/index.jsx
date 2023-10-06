@@ -7,6 +7,7 @@ import CAA from '../components/caa';
 import CAB from '../components/cab';
 import CAC from '../components/cac';
 import CAD from '../components/cad';
+import CAE from '../components/cae';
 
 const HeroCover = () => {
   return (
@@ -18,6 +19,7 @@ const HeroCover = () => {
         <CAB />
         <CAC />
         <CAD />
+        <CAE />
       </Layout>
     </>
   );

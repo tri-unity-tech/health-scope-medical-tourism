@@ -16,10 +16,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const images = [
   '/images/hospital.jpg',
-  '/images/pexels-rdne-stock-project-6129107.jpg',
   '/images/pexels-evg-kowalievska-1170979.jpg',
   '/images/pexels-vidal-balielo-jr-3376790.jpg',
-  '/images/pexels-tima-miroshnichenko-5452189.jpg',
 ];
 
 const Hero = () => {
@@ -35,6 +33,41 @@ useEffect(() => {
 
   return () => clearInterval(interval);
 }, []);
+
+
+
+
+
+
+
+
+
+
+const [screenWidth, setScreenWidth] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
+
+  useEffect(() => {
+    // Function to update screen dimensions
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
+    }
+
+    // Initial screen dimensions
+    handleResize();
+
+    // Listen for window resize events
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+
+
 
   return (
     <>
@@ -98,9 +131,15 @@ useEffect(() => {
         { images.map((img) => (
         <SwiperSlide>
           <div className='w-full h-full relative'>
-          <Image src={img} fill priority style={{
-            objectFit: 'cover',
-          }} />
+          <Image
+        src={img}
+        layout="responsive"
+        width={screenWidth}
+        height={screenHeight}
+        priority={true}
+        objectFit="cover"
+        alt="hero img"
+      />
           </div>
         </SwiperSlide>
           

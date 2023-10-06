@@ -249,7 +249,6 @@ body {
 
 .gradient-bg {
   position: relative;
-  overflow: hidden;
   top: 0;
   left: 0;
 }
