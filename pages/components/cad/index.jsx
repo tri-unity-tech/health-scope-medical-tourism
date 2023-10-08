@@ -24,45 +24,16 @@ const CAD = () => {
   }
   
   
-  //
-  
-  const [curX, setCurX] = useState(0);
-  const [curY, setCurY] = useState(0);
-  const [tgX, setTgX] = useState(0);
-  const [tgY, setTgY] = useState(0);
-
-  useEffect(() => {
-    function move() {
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
-      requestAnimationFrame(move);
-    }
-
-    const handleMouseMove = (event) => {
-      setTgX(event.clientX);
-      setTgY(event.clientY);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    move();
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, [curX, curY, tgX, tgY]);
-
-
   return (
     <>
       <section
         id='features'
-        className='w-full flex flex-col items-center'
+        className='w-full overflow-y-hidden h-[550px] sm:h-max overflow-x-hidden flex flex-col items-center px-5 md:px-20'
       >
         <div className='container my-10 z-10 flex justify-center'>
-          <h1 className='text-5xl font-bold text-gray-700'>Medical Services</h1>
+          <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Medical Services</h1>
         </div>
-        <div className='bg-white flex gradient-bg justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-28'>
+        <div className='bg-white flex gradient-bg justify-center relative py-24 md:py-20 lg:py-28'>
       
           <div className='absolute w-full h-full gradients-container left-0 right-0 z-0'>
             <div className='w-full my-10 h-full'>
@@ -70,16 +41,15 @@ const CAD = () => {
               <div className='g2 z-1' />
               <div className='g3 z-1' />
               <div className='g4 z-1' />
-              <div className='g4 z-1' />
-              <div className="interactive" style={{ transform: `translate(${Math.round(curX)}px, ${Math.round(curY)}px)` }} />
+              <div className='g5 z-1' />
             </div>
           </div>
          
-          <div className='container relative z-10 grid grid-cols-6 gap-5'>
+          <div className='container relative z-10 grid sm:grid-cols-6 gap-5'>
           
           { MedService.map((d, i) => (
 
-            <div className={`h-32 p-4 col-span-2 rounded-xl glassmor ${ d.col ? 'col-start-2' : ''}`}>
+            <div className={`h-32 p-4 col-span-2 rounded-xl glassmor ${ d.col ? 'md:col-start-2' : ''}`}>
               <h1 className='font-bold text-blue-600'>{ d.title }</h1>
               <p className='text-gray-600 text-sm mt-2'>
                 {d.para}

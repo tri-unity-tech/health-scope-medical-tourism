@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageFill from '../Common/ImageFill';
+import Image from 'next/image';
 
 const CAA = () => {
   return (
@@ -10,23 +10,12 @@ const CAA = () => {
       >
         <div className='container gap-10 grid sm:grid-cols-2'>
           
-          <div className='grid'>
-            <div className='grid gap-4 sm:gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
-              <div className='bg-black rounded-xl overflow-hidden row-start-1 row-span-6'>
-                <ImageFill src='/images/acco.jpg' alt='previews' />
-              </div>
-              <div className='bg-black rounded-xl overflow-hidden row-start-2 row-span-6'>
-                <ImageFill src='/images/pexels-mart-production-7089625.jpg' alt='previews' />
-              </div>
-            </div>
-            <div className='grid gap-4 sm:gap-10 grid-cols-2 grid-rows-16 grid-flow-col'>
-              <div className='bg-black rounded-xl overflow-hidden row-start-1 row-span-6'>
-                <ImageFill src='/images/equip.jpg' alt='previews' />
-              </div>
-              <div className='bg-black rounded-xl overflow-hidden row-start-2 row-span-6'>
-                <ImageFill src='/images/consult.jpg' alt='previews' />
-              </div>
-            </div>
+          <div className='flex justify-center'>
+		  <div className='relative'>
+		  
+		  	<Image src='/images/tailer/Frame1.png' width='500' height='400' alt='alt' />
+		    
+		  </div>
           </div>
           
           <div className='text-gray-600 flex flex-col gap-5'>

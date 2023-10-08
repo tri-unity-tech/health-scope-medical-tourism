@@ -62,11 +62,11 @@ useEffect(() => {
                 <div className='text-sm font-bold px-5 py-2 border-b border-gray-400 w-max'>EXPLORE MORE</div>
               </Link>
             </span>
-            <span className='sm:absolute bottom-10 sm:w-1/2 border-l-4 border-green-700 pl-5 left-10'>
+            {/*<span className='sm:absolute bottom-10 sm:w-1/2 border-l-4 border-green-700 pl-5 left-10'>
               <p className='text-sm sm:text-[16px] text-gray-200'>
               In today's interconnected world, the pursuit of optimal healthcare knows no borders. Health Scope Medical Tourism emerges as your trusted gateway to global healthcare excellence. With a commitment to providing you with the highest quality medical care, we bridge the gap between your health needs and the world's most renowned healthcare destinations.
               </p>
-            </span>
+            </span>*/}
           </div>
 
 
@@ -102,7 +102,6 @@ useEffect(() => {
           <div className='w-full h-full relative'>
           <Image
         src={img}
-        layout="responsive"
         fill
         priority
         objectFit="cover"
@@ -116,7 +115,7 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className='w-full h-full bg-black/50 z-[1] absolute left-0 top-0'>
+        <div className='w-full h-full bg-black/10 z-[1] absolute left-0 top-0'>
         </div>
 
 
