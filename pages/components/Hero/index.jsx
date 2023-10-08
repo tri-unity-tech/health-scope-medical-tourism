@@ -59,7 +59,14 @@ useEffect(() => {
 
             <span className=''>
               <Link href='#'>
-                <div className='text-sm font-bold px-5 py-2 border-b border-gray-400 w-max'>EXPLORE MORE</div>
+                
+                <button className="cta flex items-baseline text-white">
+		    <span className="hover-underline-animation"> Shop now </span>
+		    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+			<path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+		    </svg>
+		</button>
+		
               </Link>
             </span>
             {/*<span className='sm:absolute bottom-10 sm:w-1/2 border-l-4 border-green-700 pl-5 left-10'>

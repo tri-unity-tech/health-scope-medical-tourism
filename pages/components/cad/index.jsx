@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ImageFill from '../Common/ImageFill';
+import Image from 'next/image';
 import { AiOutlineRight } from 'react-icons/ai'
 import { GiStethoscope } from 'react-icons/gi';
 import { BsHouseHeart } from 'react-icons/bs';
@@ -28,8 +28,15 @@ const CAD = () => {
     <>
       <section
         id='features'
-        className='w-full overflow-y-hidden h-[550px] sm:h-max overflow-x-hidden flex flex-col items-center px-5 md:px-20'
+        className='w-full overflow-y-hidden h-[550px] sm:h-max relative overflow-x-hidden flex flex-col items-center px-5 md:px-20'
       >
+      
+      
+          <div className='w-full h-20 absolute bottom-0 left-0 sm:hidden z-20'>
+          	<Image src='/images/tailer/Frame2.png' fill />
+          </div>
+          
+          
         <div className='container my-10 z-10 flex justify-center'>
           <h1 className='text-3xl sm:text-5xl font-bold text-gray-700'>Medical Services</h1>
         </div>
@@ -44,6 +51,8 @@ const CAD = () => {
               <div className='g5 z-1' />
             </div>
           </div>
+          
+          
          
           <div className='container relative z-10 grid sm:grid-cols-6 gap-5'>
           
