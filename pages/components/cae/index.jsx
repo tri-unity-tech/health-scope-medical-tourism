@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import ImageFill from '../Common/ImageFill';
+import Image from 'next/image';
 import { AiOutlineRight } from 'react-icons/ai'
 import { GiStethoscope } from 'react-icons/gi';
 import { BsHouseHeart } from 'react-icons/bs';
@@ -8,6 +8,11 @@ import { TbAmbulance } from 'react-icons/tb';
 import { HiOutlineDocumentAdd } from 'react-icons/hi';
 import { MdOutlineLocalHospital } from 'react-icons/md';
 import { RiSurgicalMaskLine } from 'react-icons/ri';
+
+import images from '../../../public/images';
+
+import { motion } from 'framer-motion';
+
 
 const CAE = () => {
 
@@ -21,12 +26,22 @@ const CAE = () => {
     setCardHover(null);
   }
 
+  //
+
+  const [ cwidth, setCWidth ] = useState(0);
+
+  const carousel = useRef();
+
+  useEffect(() => {
+    setCWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  })
+
 
   return (
     <>
     <section
       id='features'
-      className=' bg-gray-100 flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
+      className=' bg-gray-100 overflow-x-hidden flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
     >
       <div className='container gap-10 grid sm:grid-cols-2'>
         
@@ -41,15 +56,24 @@ const CAE = () => {
            */}
         </div>
         
-        <div className='grid grid-cols-2 gap-5'>
+        <div className=''>
 
-<div className='h-52 rounded bg-white overflow-hidden relative'>
-  <div className='w-[90%] h-1/2 absolute bottom-0 right-0 rounded-tl-full bg-green-600'></div>
-</div>
+          <div className='w-full'>
+           <div className='w-full'>
+            <motion.div ref={carousel} className='carousel py-4 cursor-grab'>
+              <motion.div  drag="x" dragConstraints={{right: 0, left: -520}} className='inner-carousel gap-4 pl-2 flex'>
 
-<div className='h-52 rounded bg-white overflow-hidden relative'>
-  <div className='w-[90%] h-1/2 absolute bottom-0 right-0 rounded-tl-full bg-green-600'></div>
-</div>
+                { images.map((image) => {
+                  return (
+                    <motion.div key={image} className='relative h-72 rounded-xl overflow-hidden min-w-[200px]'>
+                      <Image fill src={image} alt='' className='item-img' />
+                    </motion.div>
+                  )
+                })}
+              </motion.div>
+            </motion.div>
+           </div>
+          </div>
           
         </div>
 

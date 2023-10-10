@@ -424,3 +424,12 @@ body {
 
 
 
+/* framer motion carousel */
+
+.carousel {
+  overflow: hidden;
+}
+
+.item-img {
+  pointer-events: none;
+}

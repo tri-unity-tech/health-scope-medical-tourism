@@ -41,17 +41,17 @@ const CAC = () => {
             
           </div>
           
-          <div className='grid grid-cols-3'>
+          <div className='grid mt-14 sm:mt-2 grid-cols-3'>
 
             <div className='flex flex-col gap-1 items-center'>
               <div className='w-10 h-10 flex items-center justify-center text-2xl text-blue-600 rounded bg-blue-50'>
                 <GiStethoscope />
               </div>
               <span className='mt-5'>
-                <h1 className='text-5xl font-bold text-teal-600'>75+</h1>
+                <h1 className='text-3xl sm:text-5xl font-bold text-teal-600'>75+</h1>
               </span>
               <span>
-                <p className='text-sm text-gray-600'>Treatments under one roof</p>
+                <p className='text-xs sm:text-sm text-center text-gray-600'>Treatments under one roof</p>
               </span>
             </div>
 
@@ -60,10 +60,10 @@ const CAC = () => {
                 <MdOutlineLocalHospital />
               </div>
               <span className='mt-5'>
-                <h1 className='text-5xl font-bold text-teal-600'>100+</h1>
+                <h1 className='text-3xl sm:text-5xl font-bold text-teal-600'>100+</h1>
               </span>
               <span>
-                <p className='text-sm text-gray-600'>Hospitals in India</p>
+                <p className='text-xs sm:text-sm text-center text-gray-600'>Hospitals in India</p>
               </span>
             </div>
 
@@ -72,10 +72,10 @@ const CAC = () => {
                 <RiSurgicalMaskLine />
               </div>
               <span className='mt-5'>
-                <h1 className='text-5xl font-bold text-teal-600'>200+</h1>
+                <h1 className='text-3xl sm:text-5xl font-bold text-teal-600'>200+</h1>
               </span>
               <span>
-                <p className='text-sm text-gray-600'>Surgeons and Specialists</p>
+                <p className='text-xs sm:text-sm text-center text-gray-600'>Surgeons and Specialists</p>
               </span>
             </div>
 

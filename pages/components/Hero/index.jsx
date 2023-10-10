@@ -44,7 +44,7 @@ useEffect(() => {
         id='home'
         className='relative overflow-hidden flex items-center justify-center bg-gray-900 sm:min-h-[600px] h-[100dvh] w-screen'
       >
-        <div className='container z-10 flex justify-center h-full items-center lg:gap-10 relative'>
+        <div className='container text-white z-10 flex justify-center h-full items-center lg:gap-10 relative'>
 
           <div className='flex px-5 md:px-0 sm:px-0 flex-col items-center gap-5'>
 
