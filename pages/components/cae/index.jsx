@@ -66,7 +66,10 @@ const CAE = () => {
                 { images.map((image) => {
                   return (
                     <motion.div key={image} className='relative h-72 rounded-xl overflow-hidden min-w-[200px]'>
+                      
                       <Image fill src={image} alt='' className='item-img' />
+                      <motion.div className='absolute w-full h-10  bottom-0 right-0'>
+                      </motion.div>
                     </motion.div>
                   )
                 })}

@@ -18,8 +18,8 @@ const Layout = ({ title, content, children }) => (
       <Header />
 
 
-      <div className='fixed bottom-10 right-10 z-40 w-14 h-14 rounded-full bg-green-700 opacity-70 hover:opacity-100 text-3xl flex items-center justify-center rounded'>
-        <span>
+      <div className='fixed bottom-10 text-white right-10 z-40 w-14 h-14 rounded-full bg-green-700 opacity-70 hover:opacity-100 text-3xl flex items-center justify-center rounded'>
+        <span >
         <AiOutlineWhatsApp />
         </span>
       </div>
