@@ -10,7 +10,7 @@ const Features = () => {
     <>
       <section
         id='features'
-        className='text-gray-700 overflow-x-hidden bg-blue-500 flex justify-center relative px-5 md:px-20'
+        className='text-gray-700 overflow-x-hidden bg-sky-600 flex justify-center relative px-5 md:px-20'
       >
         <div className='container'>
           

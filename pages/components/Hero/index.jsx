@@ -15,7 +15,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const images = [
-  '/images/pexels-evg-kowalievska-1170979.jpg',
+  '/images/hospital.jpg',
   '/images/pexels-vidal-balielo-jr-3376790.jpg',
 ];
 
@@ -48,6 +48,20 @@ useEffect(() => {
 
           <div className='flex px-5 md:px-0 sm:px-0 flex-col items-center gap-5'>
 
+            
+
+
+
+            {/*<span className='sm:absolute bottom-10 sm:w-1/2 border-l-4 border-green-700 pl-5 left-10'>
+              <p className='text-sm sm:text-[16px] text-gray-200'>
+              In today's interconnected world, the pursuit of optimal healthcare knows no borders. Health Scope Medical Tourism emerges as your trusted gateway to global healthcare excellence. With a commitment to providing you with the highest quality medical care, we bridge the gap between your health needs and the world's most renowned healthcare destinations.
+              </p>
+            </span>*/}
+
+
+            <div className='text-slate-900 rounded-xl p-10 glassmor flex flex-col items-center gap-5'>
+
+
             <span className='text-3xl flex flex-col items-center sm:text-4xl md:text-5xl lg:text-7xl font-bold'>
               <h1 className=''>
                 Health Scope
@@ -61,7 +75,7 @@ useEffect(() => {
               <Link href='#'>
                 
                 <button className="cta flex items-baseline text-white">
-		    <span className="hover-underline-animation"> Shop now </span>
+		    <span className="hover-underline-animation"> More </span>
 		    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
 			<path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
 		    </svg>
@@ -69,15 +83,24 @@ useEffect(() => {
 		
               </Link>
             </span>
-            {/*<span className='sm:absolute bottom-10 sm:w-1/2 border-l-4 border-green-700 pl-5 left-10'>
-              <p className='text-sm sm:text-[16px] text-gray-200'>
-              In today's interconnected world, the pursuit of optimal healthcare knows no borders. Health Scope Medical Tourism emerges as your trusted gateway to global healthcare excellence. With a commitment to providing you with the highest quality medical care, we bridge the gap between your health needs and the world's most renowned healthcare destinations.
-              </p>
-            </span>*/}
+
+              
+
+            </div>
+
+
+
+
           </div>
 
 
 
+        </div>
+
+        <div className='w-full h-32 absolute bottom-0 left-0 z-10'>
+          <div className='w-full h-full relative'>
+            <Image src='/images/tailer/Frame3.png' fill />
+          </div>
         </div>
 
         
@@ -122,7 +145,7 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className='w-full h-full bg-black/10 z-[1] absolute left-0 top-0'>
+        <div className='w-full bg-black/10 h-full z-[1] absolute left-0 top-0'>
         </div>
 
 
