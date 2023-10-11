@@ -58,7 +58,7 @@ const CAD = () => {
           
           { MedService.map((d, i) => (
 
-            <div className={`h-32 p-4 col-span-2 rounded-xl glassmor ${ d.col ? 'md:col-start-2' : ''}`}>
+            <div key={i} className={`p-4 col-span-2 rounded-xl glassmor ${ i > 3 ? 'hidden sm:block' : '' } ${ d.col ? 'sm:col-start-2' : ''}`}>
               <h1 className='font-bold text-blue-600'>{ d.title }</h1>
               <p className='text-gray-600 text-sm mt-2'>
                 {d.para}

@@ -10,6 +10,7 @@ import { MdOutlineLocalHospital } from 'react-icons/md';
 import { RiSurgicalMaskLine } from 'react-icons/ri';
 
 import images from '../../../public/images';
+import { Hospital } from './data';
 
 import { motion } from 'framer-motion';
 
@@ -41,15 +42,31 @@ const CAE = () => {
     <>
     <section
       id='features'
-      className=' bg-gray-100 overflow-x-hidden flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
+      className=' bg-slate-100 overflow-x-hidden flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
     >
-      <div className='container gap-10 grid sm:grid-cols-2'>
+      <div className='w-full h-52 top-0 left-0 absolute'>
+
+          <div className='w-full h-full relative '>
+            <Image src='/images/tailer/Frame7.png' fill alt='alt' />
+          </div>
+
+        </div>
+      <div className='w-full h-full bottom-0 left-0 absolute'>
+
+          <div className='w-full h-full relative '>
+            <Image src='/images/tailer/Frame 8.png' fill alt='alt' />
+          </div>
+
+        </div>
+
+
+      <div className='container z-10 gap-10 grid sm:grid-cols-2'>
         
         <div className='text-gray-600 flex flex-col justify-center'>
-          <h1 className='text-lg font-bold text-green-700'>
+          <h1 className='text-lg font-bold text-slate-200'>
             Hospital
           </h1>
-          <p className='text-5xl font-bold text-gray-700 mt-2'>
+          <p className='text-5xl font-bold text-slate-700 sm:text-white mt-2'>
             Medical Centres
           </p>
           {/* <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -60,15 +77,16 @@ const CAE = () => {
 
           <div className='w-full'>
            <div className='w-full'>
-            <motion.div ref={carousel} className='carousel py-4 cursor-grab'>
-              <motion.div  drag="x" dragConstraints={{right: 0, left: -520}} className='inner-carousel gap-4 pl-2 flex'>
+            <motion.div ref={carousel} className='carousel px-4 py-4 cursor-grab'>
+              <motion.div  drag="x" dragConstraints={{right: 0, left: -cwidth}} className='inner-carousel gap-4 pl-2 flex'>
 
-                { images.map((image) => {
+                { Hospital.map((d, i) => {
                   return (
-                    <motion.div key={image} className='relative h-72 rounded-xl overflow-hidden min-w-[200px]'>
+                    <motion.div key={i} className='relative h-72 rounded-xl overflow-hidden min-w-[200px]'>
                       
-                      <Image fill src={image} alt='' className='item-img' />
-                      <motion.div className='absolute w-full h-10  bottom-0 right-0'>
+                      <Image fill src={d.img} alt='' className='item-img' />
+                      <motion.div className='absolute text-slate-100 p-2 text-sm w-full h-16 bg-sky-600 bg-opacity-90 bottom-0 right-0'>
+                        { d.title }
                       </motion.div>
                     </motion.div>
                   )

@@ -8,6 +8,17 @@ const CAA = () => {
         id='features'
         className=' bg-white flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-28'
       >
+
+        <div className='w-full h-32 top-0 left-0 absolute'>
+
+          <div className='w-full h-full relative '>
+            <Image src='/images/tailer/Frame6.png' fill alt='alt' />
+          </div>
+
+        </div>
+
+
+
         <div className='container gap-10 grid sm:grid-cols-2'>
           
           <div className='flex justify-center'>
@@ -18,7 +29,7 @@ const CAA = () => {
 		  </div>
           </div>
           
-          <div className='text-gray-600 flex flex-col gap-5'>
+          <div className='text-gray-600 z-10 flex flex-col gap-5'>
             <h1 className='text-5xl font-bold text-green-700'>
             Lorem ipsum dolor sit amet
             </h1>

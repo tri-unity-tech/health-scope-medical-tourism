@@ -80,114 +80,92 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
-              <div className='mb-12 lg:mb-16'>
-                <h2 className='mb-10 text-xl font-bold text-gray-200'>
-                  Useful Links
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Blog{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Pricing{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      About{' '}
-                    </a>
-                  </li>
-                </ul>
+            
+            
+
+
+            <div className='w-full text-slate-200 lg:w-8/12 xl:w-7/12 grid grid-cols-2 md:grid-cols-3 gap-5'>
+              <div className='px-4'>
+                <div className='mb-12 lg:mb-16'>
+                  <h2 className='mb-10 text-xl font-bold'>
+                    Useful Links
+                  </h2>
+                  <ul>
+                    <li>
+                      <a
+                        href='/'
+                        className='mb-4 inline-block text-base font-medium'
+                      >
+                        {' '}
+                        Home{' '}
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href='#'
+                        className='mb-4 inline-block text-base font-medium'
+                      >
+                        {' '}
+                        About{' '}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='px-4'>
+                <div className='mb-12 lg:mb-16'>
+                  <h2 className='mb-10 text-xl font-bold'>
+                    Terms
+                  </h2>
+                  <ul>
+                    <li>
+                      <a
+                        href='#'
+                        className='mb-4 inline-block text-base font-medium'
+                      >
+                        {' '}
+                        Privacy Policy{' '}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className='px-4'>
+                <div className='mb-12 lg:mb-16'>
+                  <h2 className='mb-10 text-xl font-bold'>
+                    Support & Help
+                  </h2>
+                  <ul>
+                    <li>
+                      <a
+                        href='#'
+                        className='mb-4 inline-block text-base font-medium'
+                      >
+                        {' '}
+                        Services{' '}
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href='/nor/contact'
+                        className='mb-4 inline-block text-base font-medium'
+                      >
+                        {' '}
+                        Contact{' '}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
 
-            <div className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
-              <div className='mb-12 lg:mb-16'>
-                <h2 className='mb-10 text-xl font-bold text-gray-200'>Terms</h2>
-                <ul>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      TOS{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Privacy Policy{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Refund Policy{' '}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div className='w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12'>
-              <div className='mb-12 lg:mb-16'>
-                <h2 className='mb-10 text-xl font-bold text-gray-200'>
-                  Support & Help
-                </h2>
-                <ul>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Open Support Ticket{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      Terms of Use{' '}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='/'
-                      className='mb-4 inline-block text-base font-medium text-gray-100'
-                    >
-                      {' '}
-                      About{' '}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+
+
+
           </div>
         </div>
         <div className='bg-primary/10 py-8'>

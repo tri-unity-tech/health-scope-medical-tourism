@@ -39,7 +39,7 @@ const Header = () => {
     <>
       <nav
         className={`text-gray-700 duration-500 transition-all top-0 left-0 z-40 flex justify-center w-full items-center fixed left-0 top-0 z-50 ${
-          sticky ? 'bg-blue-500 bg-opacity-90' : 'bg-black/20' }
+          sticky ? 'bg-sky-600 bg-opacity-90' : 'bg-black/20' }
           `}
       >
         <div className='container px-5'>
@@ -84,7 +84,7 @@ const Header = () => {
                 </button>
                 <nav
                   id='navbarCollapse'
-                  className={`navbar absolute right-0 z-30 border-body-color/50 bg-blue-500 w-screen md:h-max h-[100svh] py-4 px-6 duration-300 md:visible md:static md:w-auto md:border-none md:!bg-transparent md:p-0 md:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 border-body-color/50 bg-sky-600 w-screen md:h-max h-[100svh] py-4 px-6 duration-300 md:visible md:static md:w-auto md:border-none md:!bg-transparent md:p-0 md:opacity-100 ${
                     navbarOpen
                       ? 'visibility top-full opacity-100 -left-1'
                       : 'invisible top-0 opacity-0'
