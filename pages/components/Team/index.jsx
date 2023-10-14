@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
 
 const Team = () => {
@@ -7,15 +6,10 @@ const Team = () => {
         <div className='w-full h-max flex justify-center'>
             <div className='container relative'>
 
-                <SectionTitle
-                title='Our Team'
-                paragraph='We provide a wide range of serivices and oportunities across the globe in this main sectors.'
-                center
-                />
 
-                <div className='w-full px-5 pb-24 flex flex-col gap-20 md:gap-32'>
+                <div className='w-full px-5 my-48 flex flex-col gap-20 md:gap-32'>
                     
-                    <div className='w-full gap-10 sm:gap-20 flex flex-col md:flex-row justify-between'>
+                    <div className='w-full gap-10 sm:gap-40 flex flex-col md:flex-row justify-between'>
 
                         <div className='w-72 h-60 shrink-0 relative'>
 
@@ -54,7 +48,7 @@ const Team = () => {
 
 
                     
-                    <div className='w-full gap-10 sm:gap-20 flex flex-col md:flex-row justify-between'>
+                    <div className='w-full gap-10 sm:gap-40 flex flex-col md:flex-row justify-between'>
 
                         <div className='flex order-1 md:order-0 flex-grow'>
                             <div className='w-full flex flex-col'>

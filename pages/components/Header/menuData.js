@@ -16,15 +16,27 @@ export const menuData = [
   {
     id: 33,
     title: 'Services',
-    path: '#',
+    path: '/en/services',
     newTab: false,
   },
   {
     id: 3,
     title: 'Contact',
-    path: '/nor/contact',
+    path: '/en/contact',
     newTab: false,
   },
 ];
+
+export const subData = [
+  { title: 'Why India',
+    path: '/en/why_india'
+  },
+  { title: 'Values',
+    path: '/en/values'
+  },
+  { title: 'Team',
+    path: '/en/team'
+  },
+]
 
 export default () => null;

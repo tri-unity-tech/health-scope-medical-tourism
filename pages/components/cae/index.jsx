@@ -44,13 +44,7 @@ const CAE = () => {
       id='features'
       className=' bg-slate-100 overflow-x-hidden flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
     >
-      <div className='w-full h-52 top-0 left-0 absolute'>
-
-          <div className='w-full h-full relative '>
-            <Image src='/images/tailer/Frame7.png' fill alt='alt' />
-          </div>
-
-        </div>
+      
       <div className='w-full h-full bottom-0 left-0 absolute'>
 
           <div className='w-full h-full relative '>

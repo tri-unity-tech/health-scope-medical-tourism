@@ -1,5 +1,4 @@
 import React from 'react';
-import SectionTitle from '../Common/SectionTitle';
 import Image from 'next/image';
 import { BiPlusMedical, BiSolidAmbulance } from 'react-icons/bi';
 import { BsFileMedical, BsFillHospitalFill } from 'react-icons/bs';
@@ -11,15 +10,7 @@ const OurServices = () => {
         <div className='w-full h-max mt-20 sm:mt-40 flex justify-center'>
             <div className='container relative'>
 
-                <SectionTitle
-                title='Our Serivices'
-                paragraph='We provide a wide
-                range of services and
-                opportunities across
-                the globe in these
-                main sectors.'
-                center
-                />
+               
 
 
                 <div className='grid md:grid-cols-2 xl:grid-cols-4 w-full mb-20 rounded-t-2xl p-10 gap-10'>

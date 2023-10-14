@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HeroCover from './nor/index';
+import HeroCover from './en';
 
 const Home = () => {
   return (

@@ -2,8 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import ThemeToggler from './ThemeToggler';
-import { menuData } from './menuData';
+import { menuData, subData } from './menuData';
 
 const Header = () => {
   // Navbar toggle
@@ -102,20 +101,54 @@ const Header = () => {
                           </Link>
                         ) : (
                           <>
-                            <a
+                            <span
                               onClick={() => handleSubmenu(index)}
-                              className='flex text-[35px] md:text-[16px] py-4 2xl:text-[30px] cursor-pointer items-center justify-between py-2 text-base group-hover:opacity-70 text-white md:mr-0 md:inline-flex md:py-6 md:px-0'
+                              className='flex flex-col text-[35px] md:text-[16px] py-4 2xl:text-[30px] cursor-pointer items-center justify-between py-2 text-base text-white md:mr-0 md:inline-flex md:py-6 md:px-0'
                             >
-                              {menuItem.title}
-                              <span className='pl-3'>
-                                <svg width='20' height='18' viewBox='0 0 15 14'>
-                                  <path
-                                    d='M7.81602 9.97495C7.68477 9.97495 7.57539 9.9312 7.46602 9.8437L2.43477 4.89995C2.23789 4.70308 2.23789 4.39683 2.43477 4.19995C2.63164 4.00308 2.93789 4.00308 3.13477 4.19995L7.81602 8.77183L12.4973 4.1562C12.6941 3.95933 13.0004 3.95933 13.1973 4.1562C13.3941 4.35308 13.3941 4.65933 13.1973 4.8562L8.16601 9.79995C8.05664 9.90933 7.94727 9.97495 7.81602 9.97495Z'
-                                    fill='currentColor'
-                                  />
-                                </svg>
-                              </span>
-                            </a>
+                              <div className='flex w-full md:w-max flex justify-between items-center'>
+                                {menuItem.title}
+                                <span className='pl-3'>
+                                  <svg width='20' height='18' viewBox='0 0 15 14'>
+                                    <path
+                                      d='M7.81602 9.97495C7.68477 9.97495 7.57539 9.9312 7.46602 9.8437L2.43477 4.89995C2.23789 4.70308 2.23789 4.39683 2.43477 4.19995C2.63164 4.00308 2.93789 4.00308 3.13477 4.19995L7.81602 8.77183L12.4973 4.1562C12.6941 3.95933 13.0004 3.95933 13.1973 4.1562C13.3941 4.35308 13.3941 4.65933 13.1973 4.8562L8.16601 9.79995C8.05664 9.90933 7.94727 9.97495 7.81602 9.97495Z'
+                                      fill='currentColor'
+                                    />
+                                  </svg>
+                                </span>
+                              </div>
+
+                              <div className={`h-max w-full md:w-32 py-5 md:shadow-xl rounded left-0 relative md:absolute py-1 ${ openIndex === 1 ? 'flex'
+                      : 'hidden'}  ${ sticky ? 'bg-sky-600 bg-opacity-90 md:top-28' : 'md:bg-black/50 md:top-24' }`}>
+
+<div className='text-slate-100 flex flex-col w-full md:border-b border-sky-200'>
+                                  { subData.map((d, i) => (
+                                  <span className='hover:bg-green-200 w-full hover:text-slate-700 px-5'>
+                                    <Link href={ d.path ? `${d.path}` : `#`}>
+                                      { d.title }
+                                    </Link>
+                                  </span>
+                                    
+                                    ))}
+                                </div>
+
+
+                      </div>
+
+                              {/* <div className={`md:top-14 h-max w-full md:w-32 py-5 md:shadow-xl md:border border-sky-400 rounded left-0 relative md:absolute bg-sky-600 py-1 ${ openIndex === 1 ? 'flex'
+                      : 'hidden'}`}>
+                                <li className='text-slate-100 md:border-b border-sky-200'>
+                                  { subData.map((d, i) => (
+                                  <ul className='hover:bg-green-200 hover:text-slate-700 px-5'>
+                                    <Link href='#'>
+                                      { d.title }
+                                    </Link>
+                                  </ul>
+                                    
+                                    ))}
+                                </li>
+                              </div> */}
+
+                            </span>
                           </>
                         )}
                       </li>

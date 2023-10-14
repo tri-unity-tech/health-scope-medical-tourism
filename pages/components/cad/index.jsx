@@ -42,7 +42,7 @@ const CAD = () => {
         </div>
         <div className='bg-white flex gradient-bg justify-center relative py-24 md:py-20 lg:py-28'>
       
-          <div className='absolute w-full h-full gradients-container left-0 right-0 z-0'>
+          {/* <div className='absolute w-full h-full gradients-container left-0 right-0 z-0'>
             <div className='w-full my-10 h-full'>
               <div className='g1 z-1' />
               <div className='g2 z-1' />
@@ -50,7 +50,7 @@ const CAD = () => {
               <div className='g4 z-1' />
               <div className='g5 z-1' />
             </div>
-          </div>
+          </div> */}
           
           
          
