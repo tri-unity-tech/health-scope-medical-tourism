@@ -122,11 +122,11 @@ const Header = () => {
 
 <div className='text-slate-100 flex flex-col w-full md:border-b border-sky-200'>
                                   { subData.map((d, i) => (
-                                  <span className='hover:bg-green-200 w-full hover:text-slate-700 px-5'>
                                     <Link href={ d.path ? `${d.path}` : `#`}>
-                                      { d.title }
+		                          <div className='hover:bg-green-200 w-full hover:text-slate-700 px-5'>
+		                              { d.title }
+		                          </div>
                                     </Link>
-                                  </span>
                                     
                                     ))}
                                 </div>

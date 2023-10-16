@@ -8,10 +8,9 @@ import { TbAmbulance } from 'react-icons/tb';
 const OurServices = () => {
     return (
         <div className='w-full h-max mt-20 sm:mt-40 flex justify-center'>
+
+
             <div className='container relative'>
-
-               
-
 
                 <div className='grid md:grid-cols-2 xl:grid-cols-4 w-full mb-20 rounded-t-2xl p-10 gap-10'>
 
@@ -45,7 +44,7 @@ const OurServices = () => {
 
                     <div className='flex justify-center'>
 
-                        <div id='mainbar1' className='w-72 hover:bg-orange-50 relative duration-500 ease-in p-5 flex flex-col gap-5'>
+                        <div id='mainbar1' className='w-72 hover:shadow-xl hover:bg-orange-50 relative duration-500 ease-in p-5 flex flex-col gap-5'>
 
                             <div id='serbar1' className='w-2 h-full absolute -left-2 bottom-0 bg-orange-600'></div>
 
@@ -59,7 +58,7 @@ const OurServices = () => {
 
                     <div className='flex justify-center'>
 
-                        <div id='mainbar1' className='w-72 hover:bg-purple-50 relative duration-500 ease-in p-5 flex flex-col gap-5'>
+                        <div id='mainbar1' className='w-72 hover:shadow-xl hover:bg-purple-50 relative duration-500 ease-in p-5 flex flex-col gap-5'>
 
                             <div id='serbar1' className='w-2 h-full absolute -left-2 bottom-0 bg-purple-600'></div>
 
@@ -78,15 +77,16 @@ const OurServices = () => {
                 <div className='pb-20 px-5 flex flex-col gap-20'>
                     <div>
 
-                    <div className='w-full flex justify-center'>
-                        <span className='flex w-max text-teal-600 relative font-bold text-4xl'>
-                            <div className='absolute h-14 -left-3 top-0 border-l border-gray-400' />
-                            <div className='absolute h-14 -left-5 top-0 border-l border-gray-400' />
-                            <div className='absolute w-full -left-10 bottom-0 border-b border-gray-400' />
-                            <div className='absolute w-full -left-10 -bottom-2 border-b border-gray-400' />
-                            More
-                        </span>
-                        </div>
+                    <div className='text-gray-600 flex flex-col items-center justify-center'>
+            <h1 className='text-lg font-bold text-green-700'>
+              More
+            </h1>
+            <p className='text-5xl font-bold text-gray-700 mt-2'>
+              More Services
+            </p>
+            <p className='mb-4'>We’re proud to present to you some of our partners</p>
+            
+          </div>
 
 
                     </div>

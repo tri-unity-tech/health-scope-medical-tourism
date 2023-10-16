@@ -1,14 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
 import HeroAll from '../components/HeroAll';
-import Contact from '../components/contact';
+import Values from '../components/Values';
 
-const Values = () => (
+const valuesSection = () => (
   <>
     <Layout>
       <HeroAll title='Values' />
+      <Values />
     </Layout>
   </>
 );
 
-export default Values;
+export default valuesSection;

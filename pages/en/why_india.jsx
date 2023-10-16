@@ -1,14 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
 import HeroAll from '../components/HeroAll';
-import Contact from '../components/contact';
+import WhyIndia from '../components/WhyIndia';
 
-const WhyIndia = () => (
+const Why_India = () => (
   <>
     <Layout>
       <HeroAll title='Why India' />
+      <WhyIndia />
     </Layout>
   </>
 );
 
-export default WhyIndia;
+export default Why_India;

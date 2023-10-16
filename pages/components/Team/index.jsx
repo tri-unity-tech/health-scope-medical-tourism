@@ -11,15 +11,15 @@ const Team = () => {
                     
                     <div className='w-full gap-10 sm:gap-40 flex flex-col md:flex-row justify-between'>
 
-                        <div className='w-72 h-60 shrink-0 relative'>
+                        <div className='w-72 h-96 shrink-0 relative'>
 
-                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' fill />
+                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' quality={100} objectFit="cover" fill />
                             
 
                             <div className='w-1 h-full bg-teal-400 absolute right-0 top-2'></div>
-                            <div className='w-1 h-full bg-teal-400 absolute -right-2 top-0'></div>
+                            <div className='w-1 h-full bg-red-600 absolute -right-2 top-0'></div>
                             <div className='h-1 w-full bg-teal-400 absolute -right-10 top-2'></div>
-                            <div className='h-1 w-full bg-teal-400 absolute -right-14 top-0'></div>
+                            <div className='h-1 w-full bg-red-600 absolute -right-14 top-0'></div>
                         </div>
 
                         <div className='flex flex-grow'>
@@ -74,15 +74,15 @@ secretary at HSMT.</p>
                         </div>
 
 
-                        <div className='w-72 order-0 md:order-1 h-60 shrink-0 relative'>
+                        <div className='w-72 order-0 md:order-1 h-96 shrink-0 relative'>
 
-                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' fill />
+                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' quality={100} objectFit="cover" fill />
                             
 
                             <div className='w-1 h-full bg-teal-400 absolute left-0 top-2'></div>
-                            <div className='w-1 h-full bg-teal-400 absolute -left-2 top-0'></div>
+                            <div className='w-1 h-full bg-red-600 absolute -left-2 top-0'></div>
                             <div className='h-1 w-full bg-teal-400 absolute -left-10 top-2'></div>
-                            <div className='h-1 w-full bg-teal-400 absolute -left-14 top-0'></div>
+                            <div className='h-1 w-full bg-red-600 absolute -left-14 top-0'></div>
                         </div>
 
 
