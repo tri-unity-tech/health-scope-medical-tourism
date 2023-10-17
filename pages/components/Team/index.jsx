@@ -13,7 +13,7 @@ const Team = () => {
 
                         <div className='w-72 h-96 shrink-0 relative'>
 
-                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' quality={100} objectFit="cover" fill />
+                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' alt='team' quality={100} objectFit="cover" fill />
                             
 
                             <div className='w-1 h-full bg-teal-400 absolute right-0 top-2'></div>
@@ -76,7 +76,7 @@ secretary at HSMT.</p>
 
                         <div className='w-72 order-0 md:order-1 h-96 shrink-0 relative'>
 
-                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' quality={100} objectFit="cover" fill />
+                            <Image src='/images/pexels-gustavo-fring-4173168.jpg' alt='team' quality={100} objectFit="cover" fill />
                             
 
                             <div className='w-1 h-full bg-teal-400 absolute left-0 top-2'></div>

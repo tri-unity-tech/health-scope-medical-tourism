@@ -72,7 +72,7 @@ useEffect(() => {
             </span>
 
             <span className=''>
-              <Link href='#'>
+              <Link href='/en/values'>
                 
                 <button className="cta flex items-baseline text-white">
 		    <span className="hover-underline-animation"> More </span>
@@ -99,7 +99,7 @@ useEffect(() => {
 
         <div className='w-full h-32 absolute bottom-0 left-0 z-10'>
           <div className='w-full h-full relative'>
-            <Image src='/images/tailer/Frame3.png' fill />
+            <Image src='/images/tailer/Frame3.png' fill alt='main' />
           </div>
         </div>
 

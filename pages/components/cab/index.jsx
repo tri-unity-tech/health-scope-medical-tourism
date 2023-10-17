@@ -40,7 +40,7 @@ const CAB = () => {
             </h1>
             <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             
-            <Link href='#' >
+            <Link href='/en/services' >
               <span className='px-5 py-1 rounded-full text-white flex items-center gap-2 w-max bg-green-600'>
                 More Services
                 <div>
