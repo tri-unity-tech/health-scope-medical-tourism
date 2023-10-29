@@ -38,7 +38,7 @@ const Header = () => {
     <>
       <nav
         className={`text-gray-700 duration-500 transition-all top-0 left-0 z-40 flex justify-center w-full items-center fixed left-0 top-0 z-50 ${
-          sticky ? 'bg-sky-600 bg-opacity-90' : 'bg-black/20' }
+          sticky ? 'bg-black/70 bg-blurr' : 'bg-black/20' }
           `}
       >
         <div className='container px-5'>
@@ -48,7 +48,7 @@ const Header = () => {
               <Link
                 href='/'
                 className={`block text-gray-600 w-full ${
-                  sticky ? 'py-5 md:py-10' : 'py-4'
+                  sticky ? 'py-5' : 'py-4'
                 } `}
               >
                 <div className='w-14 h-14 overflow-hidden rounded relative'>
@@ -117,13 +117,13 @@ const Header = () => {
                                 </span>
                               </div>
 
-                              <div className={`h-max w-full md:w-32 py-5 md:shadow-xl rounded left-0 relative md:absolute py-1 ${ openIndex === 1 ? 'flex'
-                      : 'hidden'}  ${ sticky ? 'bg-sky-600 bg-opacity-90 md:top-28' : 'md:bg-black/50 md:top-24' }`}>
+                              <div className={`h-max w-full md:w-52 py-7 md:shadow-xl rounded left-0 relative md:absolute py-2 ${ openIndex === 1 ? 'flex'
+                      : 'hidden'}  ${ sticky ? 'bg-black/70 md:top-24 bg-blurr' : 'md:bg-black/50 md:top-24 bg-blurr' }`}>
 
 <div className='text-slate-100 flex flex-col w-full md:border-b border-sky-200'>
                                   { subData.map((d, i) => (
                                     <Link href={ d.path ? `${d.path}` : `#`}>
-		                          <div className='hover:bg-green-200 w-full hover:text-slate-700 px-5'>
+		                          <div className='hover:bg-black/90 text-lg w-full hover:text-slate-100 px-5'>
 		                              { d.title }
 		                          </div>
                                     </Link>

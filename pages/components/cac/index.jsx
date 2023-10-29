@@ -44,7 +44,7 @@ const CAC = () => {
           <div className='grid mt-14 sm:mt-2 grid-cols-3'>
 
             <div className='flex flex-col gap-1 items-center'>
-              <div className='w-10 h-10 flex items-center justify-center text-2xl text-blue-600 rounded bg-blue-50'>
+              <div className='w-10 sm:w-20 md:w-32 lg:w-40 h-10 sm:h-20 md:h-32 lg:h-40 flex items-center justify-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-blue-600 rounded bg-blue-50'>
                 <GiStethoscope />
               </div>
               <span className='mt-5'>
@@ -56,7 +56,7 @@ const CAC = () => {
             </div>
 
             <div className='flex flex-col mt-20 gap-1 items-center'>
-              <div className='w-10 h-10 flex items-center justify-center text-2xl text-red-600 rounded bg-red-50'>
+              <div className='w-10 sm:w-20 md:w-32 lg:w-40 h-10 sm:h-20 md:h-32 lg:h-40 flex items-center justify-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-red-600 rounded bg-red-50'>
                 <MdOutlineLocalHospital />
               </div>
               <span className='mt-5'>
@@ -68,7 +68,7 @@ const CAC = () => {
             </div>
 
             <div className='flex flex-col gap-1 items-center'>
-              <div className='w-10 h-10 flex items-center justify-center text-2xl text-green-600 rounded bg-green-50'>
+              <div className='w-10 sm:w-20 md:w-32 lg:w-40 h-10 sm:h-20 md:h-32 lg:h-40 flex items-center justify-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-green-600 rounded bg-green-50'>
                 <RiSurgicalMaskLine />
               </div>
               <span className='mt-5'>

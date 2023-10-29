@@ -44,7 +44,7 @@ useEffect(() => {
         id='home'
         className='relative overflow-hidden flex items-center justify-center bg-gray-900 sm:min-h-[600px] h-[100dvh] w-screen'
       >
-        <div className='container text-white z-10 flex justify-center h-full items-center lg:gap-10 relative'>
+        <div className='container text-white z-20 flex h-full items-center lg:gap-10 relative'>
 
           <div className='flex px-5 md:px-0 sm:px-0 flex-col items-center gap-5'>
 
@@ -59,10 +59,10 @@ useEffect(() => {
             </span>*/}
 
 
-            <div className='text-slate-900 rounded-xl p-10 glassmor flex flex-col items-center gap-5'>
+            <div className='text-white rounded-xl p-10  flex flex-col gap-5'>
 
 
-            <span className='text-3xl flex flex-col items-center sm:text-4xl md:text-5xl lg:text-7xl font-bold'>
+            <span className='text-3xl flex flex-col sm:text-4xl md:text-5xl lg:text-7xl font-bold'>
               <h1 className=''>
                 Health Scope
               </h1>
@@ -71,11 +71,11 @@ useEffect(() => {
               </h1>
             </span>
 
-            <span className=''>
+            <span className='w-max'>
               <Link href='/en/values'>
                 
-                <button className="cta flex items-baseline text-white">
-		    <span className="hover-underline-animation"> More </span>
+                <button className=" flex items-baseline text-white">
+		    <span className=""> More </span>
 		    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
 			<path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
 		    </svg>
@@ -97,11 +97,11 @@ useEffect(() => {
 
         </div>
 
-        <div className='w-full h-32 absolute bottom-0 left-0 z-10'>
+        {/* <div className='w-full h-32 absolute bottom-0 left-0 z-10'>
           <div className='w-full h-full relative'>
             <Image src='/images/tailer/Frame3.png' fill alt='main' />
           </div>
-        </div>
+        </div> */}
 
         
 
@@ -109,6 +109,8 @@ useEffect(() => {
 
         <div className='w-full h-full absolute left-0 top-0'>
           <div className='w-full h-full relative'>
+
+            <div className='absolute left-0 top-0 w-full h-full bg-sky-600 bg-opacity-30 z-10'></div>
             
 
 

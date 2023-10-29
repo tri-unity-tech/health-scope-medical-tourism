@@ -27,15 +27,7 @@ const CAE = () => {
     setCardHover(null);
   }
 
-  //
 
-  const [ cwidth, setCWidth ] = useState(0);
-
-  const carousel = useRef();
-
-  useEffect(() => {
-    setCWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  })
 
 
   return (
@@ -45,52 +37,43 @@ const CAE = () => {
       className=' bg-slate-100 overflow-x-hidden flex justify-center relative py-24 px-5 md:px-20 md:py-20 lg:py-44'
     >
       
-      <div className='w-full h-full bottom-0 left-0 absolute'>
-
-          <div className='w-full h-full relative '>
-            <Image src='/images/tailer/Frame 8.png' fill alt='alt' />
-          </div>
-
-        </div>
-
-
-      <div className='container z-10 gap-10 grid sm:grid-cols-2'>
+      <div className='container z-10 gap-10 grid'>
         
         <div className='text-gray-600 flex flex-col justify-center'>
-          <h1 className='text-lg font-bold text-slate-200'>
+          <h1 className='text-lg font-bold text-slate-600'>
             Hospital
           </h1>
-          <p className='text-5xl font-bold text-slate-700 sm:text-white mt-2'>
+          <p className='text-5xl font-bold text-slate-700 mt-2'>
             Medical Centres
           </p>
-          {/* <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-           */}
         </div>
         
-        <div className=''>
+        
 
-          <div className='w-full'>
-           <div className='w-full'>
-            <motion.div ref={carousel} className='carousel px-4 py-4 cursor-grab'>
-              <motion.div  drag="x" dragConstraints={{right: 0, left: -cwidth}} className='inner-carousel gap-4 pl-2 flex'>
 
-                { Hospital.map((d, i) => {
-                  return (
-                    <motion.div key={i} className='relative h-72 rounded-xl overflow-hidden min-w-[200px]'>
-                      
-                      <Image fill src={d.img} alt='' className='item-img' />
-                      <motion.div className='absolute text-slate-100 p-2 text-sm w-full h-16 bg-sky-600 bg-opacity-90 bottom-0 right-0'>
-                        { d.title }
-                      </motion.div>
-                    </motion.div>
-                  )
-                })}
-              </motion.div>
-            </motion.div>
-           </div>
+
+        <div className='w-full flex mt-5 overflow-x-auto relative h-60'>
+         		
+         		<div className='h-full w-max flex relative gap-5'>
+					{ Hospital.map((d, i) => (
+
+         			<div key={i} className='w-80 gap-2 flex flex-col text-lg text-slate-200 h-full border border-slate-600 p-6 rounded-2xl'>
+						
+            <div className="w-28 h-28 rounded border border-slate-700 shrink-0 relative">
+            <Image fill src={d.img} alt='' className='item-img' />
+						</div>
+
+						<div>
+							<h1 className="text-lg text-slate-700 mt-2 font-bold">{ d.title }</h1>
+						</div>
+					
           </div>
-          
-        </div>
+						
+						))}
+
+         		</div>
+         	
+         	</div>
 
       </div>
     </section>

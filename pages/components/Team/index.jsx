@@ -78,7 +78,6 @@ secretary at HSMT.</p>
 
                             <Image src='/images/pexels-gustavo-fring-4173168.jpg' alt='team' quality={100} objectFit="cover" fill />
                             
-
                             <div className='w-1 h-full bg-teal-400 absolute left-0 top-2'></div>
                             <div className='w-1 h-full bg-red-600 absolute -left-2 top-0'></div>
                             <div className='h-1 w-full bg-teal-400 absolute -left-10 top-2'></div>

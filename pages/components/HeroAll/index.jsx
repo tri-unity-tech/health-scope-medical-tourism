@@ -6,7 +6,9 @@ const HeroAll = ({ title }) => {
     <div className='w-screen h-[600px] 2xl:h-[800px] bg-gray-600 relative flex items-center justify-center'>
 
       <div className='absolute w-full h-full'>
-        <div className='relative w-full h-full'>
+        <div className='relative w-full h-full'><div className='absolute left-0 top-0 w-full h-full bg-sky-600 bg-opacity-30 z-10'></div>
+            
+
         <Image src='/images/pexels-evg-kowalievska-1170979.jpg' 
           fill 
           priority

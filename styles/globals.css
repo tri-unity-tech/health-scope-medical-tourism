@@ -68,6 +68,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.bg-blurr {
+  backdrop-filter: blur(5px);
+}
+
 .text-xxs {
   font-size: 10px;
 }
