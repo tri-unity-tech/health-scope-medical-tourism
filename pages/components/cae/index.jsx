@@ -44,14 +44,14 @@ const CAE = () => {
               {Hospital.map((d, i) => (
                 <div
                   key={i}
-                  className='w-80 gap-2 flex flex-col text-lg text-slate-200 h-full border border-slate-600 p-6 rounded-2xl'
+                  className='w-80 gap-2 flex flex-col text-lg duration-500 transition-all text-slate-700 hover:text-slate-800 h-full border border-slate-300 hover:bg-sky-300 p-6 rounded-2xl'
                 >
                   <div className='w-28 h-28 rounded border border-slate-700 shrink-0 relative'>
                     <Image fill src={d.img} alt='' className='item-img' />
                   </div>
 
                   <div>
-                    <h1 className='text-lg text-slate-700 mt-2 font-bold'>
+                    <h1 className='text-lg mt-2 font-bold'>
                       {d.title}
                     </h1>
                   </div>

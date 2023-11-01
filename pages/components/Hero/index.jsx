@@ -47,7 +47,7 @@ const Hero = () => {
             </span>*/}
 
             <div className='text-white rounded-xl p-10  flex flex-col gap-5'>
-              <span className='text-3xl flex flex-col sm:text-4xl md:text-5xl lg:text-7xl font-bold'>
+              <span className='flex flex-col text-4xl md:text-5xl lg:text-7xl font-bold'>
                 <h1 className=''>Health Scope</h1>
                 <h1 className=''>Medical Tourism</h1>
               </span>
