@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-
 body {
   font-family: 'Inter', sans-serif;
   background-color: #fff;
@@ -123,7 +122,6 @@ body {
   background-position: center;
   height: 100vh;
   box-shadow: 25px 25px 50px 0 #202020 inset, -25px -25px 50px 0 #141414 inset;
- 
 }
 
 .bg-img4 {
@@ -152,8 +150,6 @@ body {
   padding-bottom: 32px;
 }
 
-
-
 #serbar1 {
   height: 0;
   overflow: hidden;
@@ -174,7 +170,6 @@ body {
   height: 100%;
 }
 
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -191,15 +186,9 @@ body {
   align-items: center;
 }
 
-
-
-
-
 /* experiment */
 
-
 :root {
-
   overflow-x: hidden;
 
   --color-bg1: rgb(108, 0, 162);
@@ -250,7 +239,6 @@ body {
   }
 }
 
-
 .gradient-bg {
   position: relative;
   top: 0;
@@ -258,116 +246,133 @@ body {
 }
 
 .gradients-container {
-    filter: url(#goo) blur(100px) ;
-    width: 100%;
-    height: 100%;
-  }
+  filter: url(#goo) blur(100px);
+  width: 100%;
+  height: 100%;
+}
 
-  .g1 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color1), 0.3) 0, rgba(var(--color1), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.g1 {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color1), 0.3) 0,
+      rgba(var(--color1), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
 
-    transform-origin: center center;
-    animation: moveVertical 30s ease infinite;
+  transform-origin: center center;
+  animation: moveVertical 30s ease infinite;
 
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-  .g2 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color2), 0.3) 0, rgba(var(--color2), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.g2 {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color2), 0.3) 0,
+      rgba(var(--color2), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
 
-    transform-origin: calc(50% - 400px);
-    animation: moveInCircle 20s reverse infinite;
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 20s reverse infinite;
 
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-  .g3 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color3), 0.3) 0, rgba(var(--color3), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.g3 {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color3), 0.3) 0,
+      rgba(var(--color3), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2 + 200px);
-    left: calc(50% - var(--circle-size) / 2 - 500px);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  left: calc(50% - var(--circle-size) / 2 - 500px);
 
-    transform-origin: calc(50% + 400px);
-    animation: moveInCircle 40s linear infinite;
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 40s linear infinite;
 
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-  .g4 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color4), 0.3) 0, rgba(var(--color4), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.g4 {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color4), 0.3) 0,
+      rgba(var(--color4), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: var(--circle-size);
-    height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
 
-    transform-origin: calc(50% - 200px);
-    animation: moveHorizontal 40s ease infinite;
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 40s ease infinite;
 
-    opacity: 0.7;
-  }
+  opacity: 0.7;
+}
 
-  .g5 {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color5), 0.3) 0, rgba(var(--color5), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.g5 {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color5), 0.3) 0,
+      rgba(var(--color5), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: calc(var(--circle-size) * 2);
-    height: calc(var(--circle-size) * 2);
-    top: calc(50% - var(--circle-size));
-    left: calc(50% - var(--circle-size));
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  left: calc(50% - var(--circle-size));
 
-    transform-origin: calc(50% - 800px) calc(50% + 200px);
-    animation: moveInCircle 20s ease infinite;
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 20s ease infinite;
 
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-  .interactive {
-    position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.3) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+.interactive {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      rgba(var(--color-interactive), 0.3) 0,
+      rgba(var(--color-interactive), 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: var(--blending);
 
-    width: 100%;
-    height: 100%;
-    top: -50%;
-    left: -50%;
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -50%;
 
-    opacity: 0.7;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+  opacity: 0.7;
+}
 
 .cta {
   border: none;
@@ -402,7 +407,7 @@ body {
 }
 
 .hover-underline-animation:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -419,15 +424,6 @@ body {
   transform-origin: bottom left;
 }
 
-
-
-
-
-
-
-
-
-
 /* framer motion carousel */
 
 .carousel {
@@ -436,4 +432,12 @@ body {
 
 .item-img {
   pointer-events: none;
+}
+
+
+.neu {
+  border-radius: 50px;
+background: linear-gradient(225deg, #cacaca, #f0f0f0);
+box-shadow:  -20px 20px 60px #bebebe,
+             20px -20px 60px #ffffff;
 }

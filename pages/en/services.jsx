@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import HeroAll from '../components/HeroAll';
-import OurServices from '../components/Services'
+import OurServices from '../components/Services';
 
 const Services = () => (
   <>

@@ -26,42 +26,51 @@ import { BsStack, BsFillInfoCircleFill } from 'react-icons/bs';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
 
 export const MedService = [
-	{ title: 'Cancer Treatments',
-	  para: 'Explore cutting-edge cancer treatments abroad.',
+  {
+    title: 'Cancer Treatments',
+    para: 'Explore cutting-edge cancer treatments abroad.',
     col: false,
-	},
-	{ title: 'Cardiology',
-	  para: 'Access top cardiac experts and state-of-the-art facilities for your heart health needs.',
+  },
+  {
+    title: 'Cardiology',
+    para: 'Access top cardiac experts and state-of-the-art facilities for your heart health needs.',
     col: false,
-	},
-	{ title: 'Orthopaedics',
-	  para: 'Find top orthopaedic specialists and advanced treatments for your musculoskeletal health.',
+  },
+  {
+    title: 'Orthopaedics',
+    para: 'Find top orthopaedic specialists and advanced treatments for your musculoskeletal health.',
     col: false,
-	},
-	{ title: 'IVF',
-	  para: 'Access renowned fertility clinics and expert reproductive specialists for your path to parenthood.',
+  },
+  {
+    title: 'IVF',
+    para: 'Access renowned fertility clinics and expert reproductive specialists for your path to parenthood.',
     col: true,
-	},
-	{ title: 'Neurology',
-	  para: 'Access leading neurologists and advanced treatments for neurological conditions, ensuring a healthier future.',
+  },
+  {
+    title: 'Neurology',
+    para: 'Access leading neurologists and advanced treatments for neurological conditions, ensuring a healthier future.',
     col: false,
-	},
-	{ title: 'Cosmetic surgery',
-	  para: 'Discover skilled surgeons and rejuvenating procedures for a more confident you.',
+  },
+  {
+    title: 'Cosmetic surgery',
+    para: 'Discover skilled surgeons and rejuvenating procedures for a more confident you.',
     col: false,
-	},
-	{ title: 'Dentistry',
-	  para: 'Access world-class dentists and modern treatments for a brighter, healthier grin.',
+  },
+  {
+    title: 'Dentistry',
+    para: 'Access world-class dentists and modern treatments for a brighter, healthier grin.',
     col: false,
-	},
-	{ title: 'Organ Transplant',
-	  para: 'Connect with expert transplant teams for hope and healing.',
+  },
+  {
+    title: 'Organ Transplant',
+    para: 'Connect with expert transplant teams for hope and healing.',
     col: false,
-	},
-	{ title: 'Hip and knee Replacement',
-	  para: 'Reclaim mobility and comfort through hip and knee replacements with medical tourism. ',
+  },
+  {
+    title: 'Hip and knee Replacement',
+    para: 'Reclaim mobility and comfort through hip and knee replacements with medical tourism. ',
     col: true,
-	},
+  },
 ];
 
 export const countries = [

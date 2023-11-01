@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
-import { RiMapPin2Line } from 'react-icons/ri';
+import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const prices = [{ price: 230.32 }, { price: 2130.04 }, { price: 4330.98 }];
 
@@ -25,15 +25,23 @@ const Contact = () => (
                 </div>
                 <span className='flex flex-col pb-10 gap-3'>
                   <div className='flex items-center gap-2'>
-                    <div className='w-5 h-5 bg-black'></div>
+                    <div className='text-lg text-slate-700'>
+                      <HiOutlineLocationMarker />
+                    </div>
                     <p className='text-gray-600'>Kigali, Rwanda</p>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <div className='w-5 h-5 bg-black'></div>
-                    <p className='text-gray-600 flex flex-col'>+250788411549,  +250788411549</p>
+                    <div className='text-lg text-slate-700'>
+                      <AiOutlineWhatsApp />
+                    </div>
+                    <p className='text-gray-600 flex flex-col'>
+                      +250788411549, +250786837318
+                    </p>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <div className='w-5 h-5 bg-black'></div>
+                    <div className='text-lg text-slate-700'>
+                      <AiOutlineMail />
+                    </div>
                     <p className='text-blue-600'>info.healthscope@gmail.com</p>
                   </div>
                 </span>

@@ -28,15 +28,9 @@ export const menuData = [
 ];
 
 export const subData = [
-  { title: 'Why India',
-    path: '/en/why_india'
-  },
-  { title: 'Values',
-    path: '/en/values'
-  },
-  { title: 'Team',
-    path: '/en/team'
-  },
-]
+  { title: 'Why India', path: '/en/why_india' },
+  { title: 'Values', path: '/en/values' },
+  { title: 'Team', path: '/en/team' },
+];
 
 export default () => null;

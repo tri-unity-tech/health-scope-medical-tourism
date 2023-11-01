@@ -3,7 +3,11 @@ import Image from 'next/image';
 import SectionTitle from '../Common/SectionTitle';
 import { featuresData } from './featuresData';
 
-import { AiOutlineExpand, AiOutlineCompress, AiOutlineHome } from 'react-icons/ai';
+import {
+  AiOutlineExpand,
+  AiOutlineCompress,
+  AiOutlineHome,
+} from 'react-icons/ai';
 
 const Features = () => {
   return (
@@ -13,77 +17,84 @@ const Features = () => {
         className='text-gray-700 overflow-x-hidden bg-sky-600 flex justify-center relative px-5 md:px-20'
       >
         <div className='container'>
-          
           <div className='grid z-10 py-20 md:gap-20 relative md:grid-cols-2'>
-
-
             <div className='relative flex'>
               <div className='w-[0.5px] bg-gray-100 h-[200px] absolute left-10 -top-40 z-10'></div>
-              
+
               <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
-              <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
-                    <AiOutlineHome />
+                <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
+                  <AiOutlineHome />
                 </div>
               </div>
 
               <div className='flex flex-grow mt-10'>
                 <div className='w-full gap-2 flex flex-col'>
-                  <h1 className='text-2xl text-gray-300 font-light'>WHO WE ARE</h1>
-                  <h2 className='font-bold text-white text-xl'>Health Scope Medical Tourism</h2>
+                  <h1 className='text-2xl text-gray-300 font-light'>
+                    WHO WE ARE
+                  </h1>
+                  <h2 className='font-bold text-white text-xl'>
+                    Health Scope Medical Tourism
+                  </h2>
 
-                  <p className='text-sm text-gray-200'>We are a prominent company that specializes in facilitating medical travel abroad for patients seeking high-quality and affordable healthcare services.</p>
+                  <p className='text-sm text-gray-200'>
+                    We are a prominent company that specializes in facilitating
+                    medical travel abroad for patients seeking high-quality and
+                    affordable healthcare services.
+                  </p>
                 </div>
               </div>
-
-
             </div>
 
             <div className='grid'>
-              
               <div className='relative flex'>
-                
                 <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
                   <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
                     <AiOutlineExpand />
                   </div>
                 </div>
-  
+
                 <div className='flex flex-grow mt-10'>
                   <div className='w-full gap-2 flex flex-col'>
                     <h2 className='font-bold text-white text-xl'>About Us</h2>
-  
-                    <p className='text-sm text-gray-200'>Health Scope Medical Tourism is a healthcare facilitator with a mission to make a positive difference in the lives of its clients. Whether you require a routine check-up, a complex surgery, or a life-changing transformation, Health Scope International Medical Tourism can assist you in achieving your health goals with confidence and convenience. We provide comprehensive and personalized support to our clients throughout their health journey.</p>
+
+                    <p className='text-sm text-gray-200'>
+                      Health Scope Medical Tourism is a healthcare facilitator
+                      with a mission to make a positive difference in the lives
+                      of its clients. Whether you require a routine check-up, a
+                      complex surgery, or a life-changing transformation, Health
+                      Scope International Medical Tourism can assist you in
+                      achieving your health goals with confidence and
+                      convenience. We provide comprehensive and personalized
+                      support to our clients throughout their health journey.
+                    </p>
                   </div>
                 </div>
-  
-  
               </div>
-              
+
               <div className='relative flex'>
                 <div className='w-[0.5px] bg-gray-100 h-[550px] absolute left-10 -top-[500px] z-10'></div>
-                
+
                 <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
                   <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
                     <AiOutlineCompress />
                   </div>
                 </div>
-  
+
                 <div className='flex flex-grow mt-10'>
                   <div className='w-full gap-2 flex flex-col'>
-                    <h2 className='font-bold text-white text-xl'>Our Commitment to Excellence</h2>
-  
-                    <p className='text-sm text-gray-200'>We are committed to continuously expanding our services, ensuring that we always provide value to people and change lives.</p>
+                    <h2 className='font-bold text-white text-xl'>
+                      Our Commitment to Excellence
+                    </h2>
+
+                    <p className='text-sm text-gray-200'>
+                      We are committed to continuously expanding our services,
+                      ensuring that we always provide value to people and change
+                      lives.
+                    </p>
                   </div>
                 </div>
-  
-  
               </div>
-
             </div>
-
-
-
-            
           </div>
 
           {/* <div className='absolute top-0 right-0 z-0 opacity-30 lg:opacity-100'>
