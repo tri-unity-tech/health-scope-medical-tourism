@@ -54,7 +54,7 @@ const Hero = () => {
 
               <span className='w-max'>
                 <Link href='/en/values'>
-                  <button className=' flex items-baseline text-white'>
+                  <button className=' flex items-baseline bg-teal-300 rounded px-10 py-2 text-slate-950 gap-5'>
                     <span className=''> More </span>
                     <svg
                       viewBox='0 0 46 16'

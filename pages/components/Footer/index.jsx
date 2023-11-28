@@ -1,7 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
+import {
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiOutlineTwitter,
+} from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -36,7 +40,7 @@ const Footer = () => {
                 </p>
                 <div className='flex items-center'>
                   <a
-                  target='_blank'
+                    target='_blank'
                     href='https://instagram.com/healthscopemedicaltourism?igshid=OGQ5ZDc2ODk2ZA=='
                     aria-label='social-link'
                     className='mr-6 text-gray-200'
@@ -46,24 +50,24 @@ const Footer = () => {
                     </span>
                   </a>
                   <a
-                  target='_blank'
+                    target='_blank'
                     href='https://x.com/healthscoperw?s=21'
                     aria-label='social-link'
                     className='mr-6 text-gray-200'
                   >
-                  <span className='text-3xl'>
-                    <AiOutlineTwitter />
-                  </span>
+                    <span className='text-3xl'>
+                      <AiOutlineTwitter />
+                    </span>
                   </a>
                   <a
-                  target='_blank'
+                    target='_blank'
                     href='https://www.linkedin.com/in/health-scope-medical-tourism-343794390'
                     aria-label='social-link'
                     className='mr-6 text-gray-200'
                   >
-                  <span className='text-3xl'>
-                    <AiOutlineLinkedin />
-                  </span>
+                    <span className='text-3xl'>
+                      <AiOutlineLinkedin />
+                    </span>
                   </a>
                 </div>
               </div>
@@ -143,11 +147,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='bg-primary/10 py-8'>
-          <div className='container'>
-            <p className='text-center text-base text-body-color dark:text-white'>
-              .
-            </p>
-          </div>
+          <div className='container'></div>
         </div>
         <div className='absolute right-0 top-14 z-[-1]'>
           <svg

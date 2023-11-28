@@ -14,7 +14,7 @@ const Features = () => {
     <>
       <section
         id='features'
-        className='text-gray-700 overflow-x-hidden bg-sky-600 flex justify-center relative px-5 md:px-20'
+        className='text-gray-700 overflow-x-hidden bg-health-blue flex justify-center relative px-5 md:px-20'
       >
         <div className='container'>
           <div className='grid z-10 py-20 md:gap-20 relative md:grid-cols-2'>
@@ -22,7 +22,7 @@ const Features = () => {
               <div className='w-[0.5px] bg-gray-100 h-[200px] absolute left-10 -top-40 z-10'></div>
 
               <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
-                <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
+                <div className='w-10 text-red-600 bg-health-blue relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
                   <AiOutlineHome />
                 </div>
               </div>
@@ -48,7 +48,7 @@ const Features = () => {
             <div className='grid'>
               <div className='relative flex'>
                 <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
-                  <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
+                  <div className='w-10 text-red-600 bg-health-blue relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
                     <AiOutlineExpand />
                   </div>
                 </div>
@@ -75,7 +75,7 @@ const Features = () => {
                 <div className='w-[0.5px] bg-gray-100 h-[550px] absolute left-10 -top-[500px] z-10'></div>
 
                 <div className='w-20 shrink-0 h-full flex justify-center pt-10'>
-                  <div className='w-10 text-red-600 bg-sky-600 relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
+                  <div className='w-10 text-red-600 bg-health-blue relative z-20 flex items-center justify-center text-xl h-10 rounded-full border'>
                     <AiOutlineCompress />
                   </div>
                 </div>

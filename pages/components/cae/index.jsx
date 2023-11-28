@@ -39,7 +39,7 @@ const CAE = () => {
             </p>
           </div>
 
-          <div className='w-full flex mt-5 overflow-x-auto relative h-60'>
+          <div className='w-full flex mt-5 overflow-x-auto relative h-66 py-3'>
             <div className='h-full w-max flex relative gap-5'>
               {Hospital.map((d, i) => (
                 <div
@@ -51,9 +51,7 @@ const CAE = () => {
                   </div>
 
                   <div>
-                    <h1 className='text-lg mt-2 font-bold'>
-                      {d.title}
-                    </h1>
+                    <h1 className='text-lg mt-2 font-bold'>{d.title}</h1>
                   </div>
                 </div>
               ))}

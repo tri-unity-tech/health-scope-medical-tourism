@@ -13,9 +13,37 @@ body {
   border-radius: 49% 51% 41% 59% / 25% 25% 75% 75%;
 }
 
+.bg-health-blue {
+  background: #0a253b;
+}
+
+.bg-health-green {
+  background: #0b9518;
+}
+
 .weird_shape {
   animation: rotate 10s linear infinite;
 }
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the thumb */
+  border-radius: 6px; /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the track */
+}
+
+/* For Firefox and other browsers */
+/* Note: Firefox doesn't support customizing the scrollbar appearance directly.
+   You can use scrollbar-width and scrollbar-color properties, but it might not work in all scenarios. */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
 
 @keyframes rotate {
   0% {
@@ -73,11 +101,6 @@ body {
 
 .text-xxs {
   font-size: 10px;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-::-webkit-scrollbar {
-  display: none;
 }
 
 .head {
@@ -434,10 +457,8 @@ body {
   pointer-events: none;
 }
 
-
 .neu {
   border-radius: 50px;
-background: linear-gradient(225deg, #cacaca, #f0f0f0);
-box-shadow:  -20px 20px 60px #bebebe,
-             20px -20px 60px #ffffff;
+  background: linear-gradient(225deg, #cacaca, #f0f0f0);
+  box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
 }
