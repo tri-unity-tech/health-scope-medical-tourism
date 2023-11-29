@@ -8,8 +8,8 @@ import { TbAmbulance } from 'react-icons/tb';
 import { HiOutlineDocumentAdd } from 'react-icons/hi';
 import { MdOutlineLocalHospital } from 'react-icons/md';
 import { RiSurgicalMaskLine } from 'react-icons/ri';
-
 import { MedService } from '../../data';
+import { RevolvingDot } from 'react-loader-spinner';
 
 const CAD = () => {
   const [cardHover, setCardHover] = useState(null);
@@ -35,8 +35,13 @@ const CAD = () => {
           showMore ? 'h-[550px]' : ''
         }`}
       >
+
+        <div className='w-full absolute z-0 h-96 overflow-hidden'>
+        </div>
+
+
         <div className='w-full h-20 absolute bottom-0 left-0 sm:hidden z-20'>
-          <Image src='/images/tailer/Frame2.png' fill />
+          <Image alt='frame' src='/images/tailer/Frame2.png' fill />
         </div>
 
         <div

@@ -13,7 +13,7 @@ const Contact = () => (
       <div className='container pb-10'>
         <div className='w-full mt-0 md:mt-40 h-max relative'>
           <div className='w-full mb-40 pt-40  h-screen relative flex justify-center'>
-            <Image src='/images/map.svg' fill priority />
+            <Image src='/images/map.svg' alt='map' fill priority />
           </div>
 
           <div className='w-full h-max px-5 md:px-10 z-10 absolute top-20 left-0 flex justify-center'>

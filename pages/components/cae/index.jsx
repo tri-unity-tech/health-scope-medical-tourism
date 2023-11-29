@@ -47,7 +47,7 @@ const CAE = () => {
                   className='w-80 gap-2 flex flex-col text-lg duration-500 transition-all text-slate-700 hover:text-slate-800 h-full border border-slate-300 hover:bg-sky-300 p-6 rounded-2xl'
                 >
                   <div className='w-28 h-28 rounded border border-slate-700 shrink-0 relative'>
-                    <Image fill src={d.img} alt='' className='item-img' />
+                    <Image fill src={d.img} alt={i} className='item-img' />
                   </div>
 
                   <div>

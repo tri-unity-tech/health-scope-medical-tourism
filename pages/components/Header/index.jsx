@@ -52,7 +52,7 @@ const Header = () => {
                 } `}
               >
                 <div className='w-14 h-14 overflow-hidden rounded relative'>
-                  <Image src='/images/logo/logo.jpeg' fill />
+                  <Image alt='logo' src='/images/logo/logo.jpeg' fill />
                 </div>
               </Link>
             </div>
@@ -92,7 +92,7 @@ const Header = () => {
                   <ul className='block md:flex items-center'>
                     {menuData.map((menuItem, index) => (
                       <li
-                        key={menuItem.id}
+                        key={index}
                         className='group border-b md:border-none relative'
                       >
                         {menuItem.path ? (
@@ -139,7 +139,7 @@ const Header = () => {
                               >
                                 <div className='text-slate-100 flex flex-col w-full md:border-b border-sky-200'>
                                   {subData.map((d, i) => (
-                                    <Link href={d.path ? `${d.path}` : `#`}>
+                                    <Link key={i} href={d.path ? `${d.path}` : `#`}>
                                       <div className='hover:bg-black/90 text-lg w-full hover:text-slate-100 px-5'>
                                         {d.title}
                                       </div>
@@ -157,7 +157,7 @@ const Header = () => {
                                       { d.title }
                                     </Link>
                                   </ul>
-                                    
+
                                     ))}
                                 </li>
                               </div> */}

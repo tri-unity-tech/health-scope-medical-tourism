@@ -46,7 +46,7 @@ const Hero = () => {
               </p>
             </span>*/}
 
-            <div className='text-white rounded-xl p-10  flex flex-col gap-5'>
+            <div className='text-white rounded-xl p-10  flex flex-col gap-10'>
               <span className='flex flex-col text-4xl md:text-5xl lg:text-7xl font-bold'>
                 <h1 className=''>Health Scope</h1>
                 <h1 className=''>Medical Tourism</h1>
@@ -85,7 +85,7 @@ const Hero = () => {
 
         <div className='w-full h-full absolute left-0 top-0'>
           <div className='w-full h-full relative'>
-            <div className='absolute left-0 top-0 w-full h-full bg-sky-600 bg-opacity-30 z-10'></div>
+            <div className='absolute left-0 top-0 w-full h-full bg-blue-800 bg-opacity-30 z-10'></div>
 
             <Swiper
               spaceBetween={30}
@@ -101,12 +101,14 @@ const Hero = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className='mySwiper'
             >
-              {images.map((img) => (
-                <SwiperSlide>
+
+              {images.map((img, i) => (
+                <SwiperSlide key={i}>
                   <div className='w-full h-full relative'>
                     <Image
                       src={img}
                       fill
+                      alt={i}
                       priority
                       objectFit='cover'
                       alt='hero img'
