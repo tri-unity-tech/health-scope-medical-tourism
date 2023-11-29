@@ -13,7 +13,7 @@ const Values = () => {
     <>
       <section className='text-gray-700 overflow-x-hidden flex flex-col relative'>
         <div className='w-full h-[500px] sm:h-96 relative'>
-          <div className='w-full absolute z-0 left-0 top-0 h-full bg-sky-600 flex justify-end'>
+          <div className='w-full absolute z-0 left-0 top-0 h-full bg-health-blue flex justify-end'>
             <div className='w-96 h-full relative'>
               <Image
                 src='/images/little/pexels-karolina-grabowska-4386467.jpg'
