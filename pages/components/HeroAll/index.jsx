@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const HeroAll = ({ title }) => {
+const HeroAll = ({ title,content }) => {
   return (
     <div className='w-screen h-[600px] 2xl:h-[800px] bg-gray-600 relative flex items-center justify-center'>
       <div className='absolute w-full h-full'>
@@ -30,8 +30,7 @@ const HeroAll = ({ title }) => {
               <h1 className='text-5xl font-bold text-red-600'>{title}</h1>
 
               <p className='text-slate-900 max-w-[300px]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor
-                sit amet, consectetur adipiscing elit
+                {content}
               </p>
 
               <div className='px-10 mt-6 w-max rounded-full py-2 bg-teal-600 text-white'>

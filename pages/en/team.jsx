@@ -6,7 +6,7 @@ import Team from '../components/Team';
 const TeamSection = () => (
   <>
     <Layout>
-      <HeroAll title='Team' />
+      <HeroAll title='Team' content="Our diverse team of specialists works harmoniously to provide personalized care, ensuring your health knows no borders." />
       <Team />
     </Layout>
   </>
