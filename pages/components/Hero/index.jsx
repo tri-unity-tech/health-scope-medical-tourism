@@ -105,14 +105,13 @@ const Hero = () => {
               {images.map((img, i) => (
                 <SwiperSlide key={i}>
                   <div className='w-full h-full relative'>
-                    <Image
-                      src={img}
-                      fill
-                      alt={i}
-                      priority
-                      objectFit='cover'
-                      alt='hero img'
-                    />
+                  <Image
+                  src={img}
+                  fill
+                  alt={`hero image ${i}`} // Updated alt attribute
+                  priority
+                  objectFit='cover'
+                />
                   </div>
                 </SwiperSlide>
               ))}
