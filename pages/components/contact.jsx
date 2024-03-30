@@ -7,7 +7,10 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const prices = [{ price: 230.32 }, { price: 2130.04 }, { price: 4330.98 }];
 
+
 const Contact = () => (
+  
+  
   <>
     <div className='w-full mb-40 md:mb-0 flex justify-center'>
       <div className='container pb-10'>
@@ -35,14 +38,14 @@ const Contact = () => (
                       <AiOutlineWhatsApp />
                     </div>
                     <p className='text-gray-600 flex flex-col'>
-                      +250788411549, +250786837318
+                    <span><a href={`https://wa.me/+250788411549`} target="_blank" rel="noopener noreferrer"> +250788411549</a></span><span> <a href={`https://wa.me/+250786837318`} target="_blank" rel="noopener noreferrer">+250786837318</a></span>
                     </p>
                   </div>
                   <div className='flex items-center gap-2'>
                     <div className='text-lg text-slate-700'>
                       <AiOutlineMail />
                     </div>
-                    <p className='text-blue-600'>info.healthscope@gmail.com</p>
+                    <p className='text-blue-600'>info@healthscopemed.com</p>
                   </div>
                 </span>
               </div>

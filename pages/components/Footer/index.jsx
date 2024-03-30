@@ -35,8 +35,7 @@ const Footer = () => {
                   />
                 </Link> */}
                 <p className='mb-9 text-base font-medium leading-relaxed text-white'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                Stay connected with Healthscope for updates, tips, and more.
                 </p>
                 <div className='flex items-center'>
                   <a

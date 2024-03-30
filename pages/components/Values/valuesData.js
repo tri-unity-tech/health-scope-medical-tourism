@@ -25,6 +25,10 @@ export const valuesData = [
     title: 'Teamwork',
     paragraph: `We conduct our work in a team and believe that together we are more stronger.`,
   },
+  {
+    title: 'Compassion',
+    paragraph: `We facilitate our patients' treatment not just as cases, but as individuals with unique needs and emotions.`,
+  },
 ];
 
 export default () => null;

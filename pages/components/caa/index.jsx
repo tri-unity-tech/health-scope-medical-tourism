@@ -28,24 +28,14 @@ const CAA = () => {
 
           <div className='text-gray-600 z-10 flex flex-col gap-5'>
             <h1 className='text-3xl sm:text-5xl font-bold text-green-700'>
-              Lorem ipsum
+              About Us
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+            Healthscope is your trusted partner for medical health tourism. We offer you a wide range of options for accessing the best quality and cost-effective medical care in the world. Whether you need surgery, a transplant, or a treatment, we have the expertise and the network to help you find the right solution for your health needs.
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+            We understand that traveling abroad for medical reasons can be stressful and challenging. That's why we are committed to providing you with comprehensive and personalized information, guidance, and support throughout your journey. We value your life and your well-being, and we want to ensure your satisfaction and peace of mind.
             </p>
           </div>
         </div>

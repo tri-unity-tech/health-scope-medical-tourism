@@ -6,7 +6,7 @@ import Values from '../components/Values';
 const valuesSection = () => (
   <>
     <Layout>
-      <HeroAll title='Values' />
+      <HeroAll title='Values' content="Heathscope Medical Tourism is dedicated to providing compassionate, honest, and excellent care to patients worldwide. Read about our values:" />
       <Values />
     </Layout>
   </>

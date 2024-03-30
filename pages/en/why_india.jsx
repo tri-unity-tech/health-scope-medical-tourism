@@ -6,7 +6,7 @@ import WhyIndia from '../components/WhyIndia';
 const Why_India = () => (
   <>
     <Layout>
-      <HeroAll title='Why India' />
+      <HeroAll title='Why India' content="You deserve the best medical care at the best price. That's why India is the right choice for you. Why choose India for your medical needs?"/>
       <WhyIndia />
     </Layout>
   </>
