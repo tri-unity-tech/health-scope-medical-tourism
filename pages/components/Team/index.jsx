@@ -9,7 +9,7 @@ const Team = () => {
           <div className='w-full gap-10 sm:gap-40 flex flex-col md:flex-row justify-between'>
             <div className='w-72 h-96 shrink-0 relative'>
               <Image
-                src='/images/pexels-gustavo-fring-4173168.jpg'
+                src='/images/jerome.JPG'
                 alt='team'
                 quality={100}
                 objectFit='cover'
@@ -86,7 +86,7 @@ const Team = () => {
 
             <div className='w-72 order-0 md:order-1 h-96 shrink-0 relative'>
               <Image
-                src='/images/pexels-gustavo-fring-4173168.jpg'
+                src='/images/nelson.jpg'
                 alt='team'
                 quality={100}
                 objectFit='cover'
