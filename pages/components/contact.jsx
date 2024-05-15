@@ -26,9 +26,9 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
+
       if (response.ok) {
         console.log('Email sent successfully!');
-        // Optionally, reset form fields
         setFormData({
           fullName: '',
           email: '',
@@ -42,7 +42,6 @@ const Contact = () => {
       console.error('Error:', error);
     }
   };
-
   return (
     <div className='w-full mb-40 md:mb-0 flex justify-center'>
       <div className='container pb-10'>

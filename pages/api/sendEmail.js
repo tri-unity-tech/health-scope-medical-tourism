@@ -45,14 +45,12 @@
 // pages/api/sendEmail.js
 
 // pages/api/sendEmail.js
-
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { fullName, email, subject, message } = req.body;
 
-    // Ensure environment variables are set
     const user = process.env.EMAIL_USER;
     const pass = process.env.EMAIL_PASS;
 
@@ -60,18 +58,19 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Email credentials are not set' });
     }
 
-    // Create a Nodemailer transporter
+    // Use secure connection if in production, else use non-secure
+    const isProduction = process.env.NODE_ENV === 'production';
+
     let transporter = nodemailer.createTransport({
       host: 'mail.healthscopemed.com',
-      port: 465, // Use SMTP port 465 for secure connection
-      secure: true, // Set to true for secure connection
+      port: isProduction ? 465 : 587, // Use 465 for secure, 587 for non-secure
+      secure: isProduction, // True for 465, false for other ports
       auth: {
         user: user,
         pass: pass,
       },
     });
 
-    // Define email options
     let mailOptions = {
       from: 'marketing@healthscopemed.com',
       to: 'bizimanasalomon85@gmail.com',
@@ -79,12 +78,10 @@ export default async function handler(req, res) {
       text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
     };
 
-    // Send the email
     try {
-      await transporter.sendMail(mailOptions);
+      let info = await transporter.sendMail(mailOptions);
       res.status(200).json({ success: true });
     } catch (error) {
-      console.error('Error sending email:', error);
       res.status(500).json({ error: 'Failed to send email' });
     }
   } else {
