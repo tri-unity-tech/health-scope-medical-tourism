@@ -33,9 +33,11 @@ const Contact = () => {
         setemail('');
         setsubject('');
         setmessage('');
+        alert(status);
 
       } else {
         setStatus('Failed to send email');
+        alert(status);
       }
     } catch (error) {
       console.error('Error:', error);
