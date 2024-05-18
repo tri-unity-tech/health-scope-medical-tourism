@@ -29,13 +29,11 @@ const Contact = () => {
       });
       if (response.status === 200) {
         setStatus('Email sent successfully!');
-        // Optionally, reset form fields
-        // setFormData({
-        //   fullName: '',
-        //   email: '',
-        //   subject: '',
-        //   message: '',
-        // });
+        setfullName('');
+        setemail('');
+        setsubject('');
+        setmessage('');
+
       } else {
         setStatus('Failed to send email');
       }
