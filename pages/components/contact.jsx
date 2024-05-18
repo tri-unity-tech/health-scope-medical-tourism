@@ -2,46 +2,65 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
+import axios from 'axios';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+ 
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const [status, setStatus] = useState(null);
+  const [fullName, setfullName] = useState('');
+  const [email, setemail] = useState('');
+  const [subject, setsubject] = useState('');
+  const [message, setmessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const formData = new FormData();
+      formData.append('name', fullName);
+      formData.append('email', email);
+      formData.append('message', message);
+      formData.append('subject', subject);
 
-      if (response.ok) {
-        console.log('Email sent successfully!');
-        setFormData({
-          fullName: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
+      const response = await axios.post(`https://django-vercel-psi-bice.vercel.app/contact_us/`, formData, {
+        withCredentials: true,
+      });
+      if (response.status === 200) {
+        setStatus('Email sent successfully!');
+        // Optionally, reset form fields
+        // setFormData({
+        //   fullName: '',
+        //   email: '',
+        //   subject: '',
+        //   message: '',
+        // });
       } else {
-        console.error('Failed to send email');
+        setStatus('Failed to send email');
       }
     } catch (error) {
       console.error('Error:', error);
+      setStatus('An error occurred while sending the email');
     }
   };
+
+  // Helper function to get CSRF token from cookies
+  const getCookie = (name) => {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === name + '=') {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  };
+
   return (
     <div className='w-full mb-40 md:mb-0 flex justify-center'>
       <div className='container pb-10'>
@@ -113,8 +132,8 @@ const Contact = () => {
                         <input
                           name='fullName'
                           className='border-b py-1 text-sm outline-none text-gray-600 bg-transparent border-gray-400'
-                          value={formData.fullName}
-                          onChange={handleChange}
+                          value={fullName}
+                          onChange={(e) => setfullName(e.target.value)}
                           placeholder='John Doe'
                           type='text'
                         />
@@ -126,8 +145,8 @@ const Contact = () => {
                         <input
                           name='email'
                           className='border-b py-1 text-sm outline-none text-gray-600 bg-transparent border-gray-400'
-                          value={formData.email}
-                          onChange={handleChange}
+                          value={email}
+                          onChange={(e) => setemail(e.target.value)}
                           placeholder='john@gmail.com'
                           type='email'
                         />
@@ -137,8 +156,8 @@ const Contact = () => {
                         <input
                           name='subject'
                           className='border-b py-1 text-sm outline-none text-gray-600 bg-transparent border-gray-400'
-                          value={formData.subject}
-                          onChange={handleChange}
+                          value={subject}
+                          onChange={(e) => setsubject(e.target.value)}
                           placeholder='Product availability'
                           type='text'
                         />
@@ -150,10 +169,9 @@ const Contact = () => {
                         <textarea
                           name='message'
                           className='border-b h-32 py-1 text-sm outline-none text-gray-600 bg-transparent border-gray-400'
-                          value={formData.message}
-                          onChange={handleChange}
+                          value={message}
+                          onChange={(e) => setmessage(e.target.value)}
                           placeholder='e.g John Doe'
-                          type='text'
                         />
                       </div>
 
@@ -164,6 +182,7 @@ const Contact = () => {
                       </div>
                     </span>
                   </form>
+                  {status && <p>{status}</p>}
                 </div>
               </div>
             </div>
