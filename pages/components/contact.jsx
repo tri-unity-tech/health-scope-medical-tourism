@@ -182,7 +182,7 @@ const Contact = () => {
                       </div>
                     </span>
                   </form>
-                  {status && <p>{status}</p>}
+                  {/* {status && <p>{status}</p>} */}
                 </div>
               </div>
             </div>
