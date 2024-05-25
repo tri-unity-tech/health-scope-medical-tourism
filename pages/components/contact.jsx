@@ -23,7 +23,7 @@ const Contact = () => {
       formData.append('email', email);
       formData.append('message', message);
       formData.append('subject', subject);
-
+    // const url='https://django-vercel-psi-bice.vercel.app';
       const response = await axios.post(`https://django-vercel-psi-bice.vercel.app/contact_us/`, formData, {
         withCredentials: true,
       });
@@ -37,11 +37,11 @@ const Contact = () => {
 
       } else {
         setStatus('Failed to send email');
-        alert(status);
+        // alert(status);
       }
     } catch (error) {
-      console.error('Error:', error);
-      setStatus('An error occurred while sending the email');
+      // console.error('Error:', error);
+      // setStatus('An error occurred while sending the email');
     }
   };
 
